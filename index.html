@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
     <head>
         <title>Kalkulator Nilai Wajar Saham</title>
         <script src="script.js"></script>
         <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body onload="initTable()">
         <div class="wrapper">
@@ -11,7 +13,6 @@
 
             <select id="id-choice" name="choice" onchange="handleChoice()">
                 <option value=""></option>
-                <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
@@ -20,21 +21,39 @@
                 <option value="7">7</option>
             </select>
 
-            <div class="tables-container">
-                <div class="table-wrapper">
-                    <h3>Tabel Ekuitas</h3>
-                    <table id="id-table-ekuitas">
-                        <thead>
-                            <tr>
-                                <th>Tahun</th>
-                                <th>Data</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
-                    </table>
-                </div>
-                
+            <div class="tables-container" id="tables-container">
+            </div>
+
+            <button class="btn-submit" onclick="calculate()">Calculate</button>
+
+            <div class="tables-wrapper">
+                <h3>Forecast</h3>
+                <table id="id-forecast">
+                    <thead>
+                        <tr>
+                            <td>Tahun</td>
+                            <td>Data</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td placeholder="0"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td placeholder="0"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td placeholder="0"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td placeholder="0"></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </body>

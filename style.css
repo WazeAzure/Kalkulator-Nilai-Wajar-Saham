@@ -11,6 +11,16 @@
     font-family: roboto_regular;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number']{
+    border-color:transparent;
+}
+
 .wrapper {
     margin: auto;
     width: 80%;
@@ -25,7 +35,29 @@
     display: flex;
 }
 
-table, th, tr, td {
+table {
+    border-collapse: collapse;
+}
+
+th, tr, td {
     border: 1px solid black;
     border-collapse: collapse;
+    padding: 1px;
+}
+
+.table-wrapper h3 {
+    text-transform: capitalize;
+}
+
+.table-wrapper {
+    min-width: 20vw;
+}
+
+.btn-submit {
+    margin: 1em 0;
+}
+
+#id-forecast {
+    width: 20vw;
+    height: 10vw;
 }
