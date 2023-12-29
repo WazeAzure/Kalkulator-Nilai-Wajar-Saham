@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kalkulator Nilai Wajar Saham</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="initTable()">
+        <div class="wrapper">
+            <h1>Kalkulator Nilai Wajar Saham</h1>
+
+            <select id="id-choice" name="choice" onchange="handleChoice()">
+                <option value=""></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+
+            <div class="tables-container">
+                <div class="table-wrapper">
+                    <h3>Tabel Ekuitas</h3>
+                    <table id="id-table-ekuitas">
+                        <thead>
+                            <tr>
+                                <th>Tahun</th>
+                                <th>Data</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>
